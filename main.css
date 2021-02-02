@@ -29,6 +29,11 @@ h1 {
     margin: 0 0 30px 0;
     text-align: center;
 }
+#zip {
+    max-width: 40%;
+}
+
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -53,9 +58,11 @@ input[type="checkbox"] {
     margin: 0 4px 8px 0;
 }
 
-#zip {
-    width: 50%;
+input:focus {
+    background-color: white;
 }
+
+
 
 button {
     padding: 19px 39px 18px 39px;
@@ -101,12 +108,18 @@ label {
         display: flex;
     }
 
-    .lab {
-        flex: 1 30%;
+    .row label {
+        flex-basis: 25%;
     }
 
-    .inp {
-        flex: 1 75%;
+    .row input,
+    .row select {
+        flex-basis: 75%;
+    }
+
+    .inner {
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     ::-webkit-input-placeholder {
