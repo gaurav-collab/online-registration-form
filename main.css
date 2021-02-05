@@ -19,7 +19,6 @@ body {
     color: #384047;
 }
 form {
-    max-width: 80%;
     margin: 10px auto;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -30,7 +29,7 @@ h1 {
     text-align: center;
 }
 #zip {
-    max-width: 40%;
+    max-width: 50%;
 }
 
 
@@ -120,6 +119,10 @@ label {
     .inner {
         flex-direction: row;
         align-items: flex-start;
+    }
+
+    #zip {
+        max-width: 30%;
     }
 
     ::-webkit-input-placeholder {
